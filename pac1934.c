@@ -1,5 +1,6 @@
 /*
  * PAC1934 I2C ADC driver
+ * datasheet: https://ww1.microchip.com/downloads/en/DeviceDoc/PAC1931-Family-Data-Sheet-DS20005850E.pdf
  */
 
 #include <asm/ioctl.h>
