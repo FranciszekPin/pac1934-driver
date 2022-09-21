@@ -56,7 +56,7 @@ struct pac1934 {
 /* Additionally only one thread is running, so running another thread periodically */
 /* kills the system, so on testing on renode please keep FETCH_DATA_IN_THREADS undefined */
 
-// #define FETCH_DATA_IN_THREADS
+/* #define FETCH_DATA_IN_THREADS */
 
 static void update_data(struct pac1934 *state)
 {
