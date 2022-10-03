@@ -161,6 +161,8 @@ static int set_data_processed(struct iio_chan_spec const *chan,
 	tmp = buf[chan->channel];
 	mutex_unlock(&state->lock);
 	proc = chann_type_to_processor(chan->type);
+	if (proc == NULL)
+		return -EINVAL;
 	proc(tmp, val, val2);
 	return IIO_VAL_FRACTIONAL_LOG2;
 }
